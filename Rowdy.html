@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rowdy Club Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+          
+    height: 100vh;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPE6MmsQyWH9PH1_bHeHinqeeR2N0hA_71w&s') no-repeat center center/cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+
+        /* Dark overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            top: 0;
+            left: 0;
+        }
+
+        .login-container {
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .login-container h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .login-container p {
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+
+        .input-box input::placeholder {
+            color: #ddd;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #ff3c3c;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #ff1f1f;
+            transform: scale(1.05);
+        }
+
+        .extra {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .extra a {
+            color: #ff3c3c;
+            text-decoration: none;
+        }
+
+        .extra a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h1>ROWDY CLUB</h1>
+        <p>Enter the vibe 🔥</p>
+
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button class="login-btn">Login</button>
+
+            <div class="extra">
+                <p>Not a member? <a href="#">Join Now</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
